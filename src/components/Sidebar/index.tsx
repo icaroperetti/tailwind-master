@@ -1,17 +1,18 @@
-import { Logo } from './Logo'
 import {
   BarChart,
   CheckSquare,
+  Cog,
   Flag,
   Home,
+  LifeBuoy,
+  Search,
   SquareStack,
   Users,
-  Search,
-  LifeBuoy,
-  Cog,
 } from 'lucide-react'
+import { Logo } from './Logo'
 
 import { NavItem } from './NavItem'
+import { Profile } from './Profile'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
 
 export default function Sidebar() {
@@ -43,6 +44,10 @@ export default function Sidebar() {
         </nav>
 
         <UsedSpaceWidget />
+
+        <div className='h-px bg-zinc-200'></div>
+
+        <Profile  />
       </div>
     </aside>
   )
