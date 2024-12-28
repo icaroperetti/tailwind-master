@@ -144,7 +144,10 @@ export default function Home() {
                 Write a short introduction
               </span>
             </label>
-            <div className="grid gap-6"></div>
+            <FileInput.Root>
+              <FileInput.Trigger />
+              <FileInput.Control />
+            </FileInput.Root>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
