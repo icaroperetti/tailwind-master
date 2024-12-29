@@ -146,6 +146,7 @@ export default function Home() {
             </label>
             <FileInput.Root>
               <FileInput.Trigger />
+              <FileInput.FileList />
               <FileInput.Control multiple />
             </FileInput.Root>
           </div>
@@ -160,7 +161,6 @@ export default function Home() {
                 Share a few snippets of your work
               </span>
             </label>
-            <div className="grid gap-6"></div>
           </div>
           <div className="flex items-center justify-end gap-2 pt-5">
             <button
