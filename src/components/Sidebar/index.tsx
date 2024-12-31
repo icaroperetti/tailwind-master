@@ -1,4 +1,5 @@
 'use client'
+
 import {
   BarChart,
   CheckSquare,
@@ -19,6 +20,7 @@ import { Profile } from './Profile'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
 import * as Collapsible from '@radix-ui/react-collapsible'
 import { Button } from '../Button'
+import ThemeSwitch from '../ThemeSwitch'
 
 export default function Sidebar() {
   return (
@@ -30,6 +32,7 @@ export default function Sidebar() {
             <Menu className="h-6 w-6" />
           </Button>
         </Collapsible.Trigger>
+        <ThemeSwitch />
       </div>
 
       <Collapsible.Content

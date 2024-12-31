@@ -2,6 +2,7 @@ import Sidebar from '@/components/Sidebar'
 import type { Metadata } from 'next'
 import { Geist } from 'next/font/google'
 import './globals.css'
+import { Providers } from './providers'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -19,15 +20,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="antialiased">
+    <html suppressHydrationWarning lang="en" className="antialiased">
       <body className={`${geistSans.variable} antialiased`}>
-        <div className="relative min-h-screen lg:grid lg:grid-cols-app dark:bg-zinc-900">
-          <Sidebar />
+        <Providers>
+          <div className="relative min-h-screen lg:grid lg:grid-cols-app dark:bg-zinc-900">
+            <Sidebar />
 
-          <main className="max-w-screen px-4 pb-12 pt-24 lg:col-start-2 lg:w-auto lg:px-8 lg:pt-8">
-            {children}
-          </main>
-        </div>
+            <main className="max-w-screen px-4 pb-12 pt-24 lg:col-start-2 lg:w-auto lg:px-8 lg:pt-8">
+              {children}
+            </main>
+          </div>
+        </Providers>
       </body>
     </html>
   )
