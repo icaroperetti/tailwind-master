@@ -1,11 +1,11 @@
-import { ChevronDown } from "lucide-react"
-import { ElementType } from "react"
+import { ChevronDown } from 'lucide-react'
+import { ElementType } from 'react'
 
 interface NavItemProps {
   title: string
   icon: ElementType
 }
-export function NavItem({ title,icon: Icon }: NavItemProps) {
+export function NavItem({ title, icon: Icon }: NavItemProps) {
   return (
     <a
       href=""

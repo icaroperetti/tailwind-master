@@ -11,7 +11,7 @@ export function Profile() {
         alt=""
       />
       <div className="flex flex-col truncate">
-        <span className="truncate text-sm font-semibold text-zinc-700 dark:text-zinc-100">
+        <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
           Icaro
         </span>
         <span className="truncate text-sm font-semibold text-zinc-500 dark:text-zinc-400">
